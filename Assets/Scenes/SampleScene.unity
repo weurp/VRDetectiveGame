@@ -599,6 +599,7 @@ PrefabInstance:
     - {fileID: -7640558969779515294, guid: 928ce18f7e7fe02498bfe628e0eabd01, type: 3}
     - {fileID: -2045257923548263128, guid: 928ce18f7e7fe02498bfe628e0eabd01, type: 3}
     - {fileID: -1063203228461421988, guid: 928ce18f7e7fe02498bfe628e0eabd01, type: 3}
+    - {fileID: 7542283774460768043, guid: 928ce18f7e7fe02498bfe628e0eabd01, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1196316746937110565, guid: 928ce18f7e7fe02498bfe628e0eabd01, type: 3}
@@ -1090,6 +1091,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8153468022190502949, guid: f42bef701778a20489d0e7b8fa0101a1, type: 3}
+      propertyPath: m_Name
+      value: BrotherPolaroid
+      objectReference: {fileID: 0}
+    - target: {fileID: -1857309847194865932, guid: f42bef701778a20489d0e7b8fa0101a1, type: 3}
+      propertyPath: m_Name
+      value: WifePolaroid
+      objectReference: {fileID: 0}
+    - target: {fileID: 50754954277266222, guid: f42bef701778a20489d0e7b8fa0101a1, type: 3}
+      propertyPath: m_Name
+      value: ColleaguePolaroid
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f42bef701778a20489d0e7b8fa0101a1, type: 3}
       propertyPath: m_Name
       value: boardW_Pictures
@@ -1097,7 +1110,16 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 50754954277266222, guid: f42bef701778a20489d0e7b8fa0101a1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1332281997}
+    - targetCorrespondingSourceObject: {fileID: -1857309847194865932, guid: f42bef701778a20489d0e7b8fa0101a1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1326158597}
+    - targetCorrespondingSourceObject: {fileID: -8153468022190502949, guid: f42bef701778a20489d0e7b8fa0101a1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1258687471}
   m_SourcePrefab: {fileID: 100100000, guid: f42bef701778a20489d0e7b8fa0101a1, type: 3}
 --- !u!1001 &548712685
 PrefabInstance:
@@ -1569,7 +1591,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4253f32900bcc4d499d675566142ded0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 772573014}
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -1883,7 +1905,19 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1332281997}
+        m_TargetAssemblyTypeName: SpawnScript, Assembly-CSharp
+        m_MethodName: setVisible
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
@@ -2205,6 +2239,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 20.502, y: 105.155, z: 152.671}
+--- !u!1 &1258687469 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -8153468022190502949, guid: f42bef701778a20489d0e7b8fa0101a1, type: 3}
+  m_PrefabInstance: {fileID: 547668461}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1258687471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258687469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82267ad974020354bb79ec4f89dbbb42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameObject: {fileID: 0}
 --- !u!1 &1285233602 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8391222552659086748, guid: 928ce18f7e7fe02498bfe628e0eabd01, type: 3}
@@ -2280,7 +2332,19 @@ MonoBehaviour:
       m_Calls: []
   m_FirstSelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1326158597}
+        m_TargetAssemblyTypeName: SpawnScript, Assembly-CSharp
+        m_MethodName: setVisible
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_LastSelectExited:
     m_PersistentCalls:
       m_Calls: []
@@ -2436,6 +2500,42 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &1326158595 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -1857309847194865932, guid: f42bef701778a20489d0e7b8fa0101a1, type: 3}
+  m_PrefabInstance: {fileID: 547668461}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1326158597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1326158595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82267ad974020354bb79ec4f89dbbb42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameObject: {fileID: 0}
+--- !u!1 &1332281995 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 50754954277266222, guid: f42bef701778a20489d0e7b8fa0101a1, type: 3}
+  m_PrefabInstance: {fileID: 547668461}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1332281997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1332281995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82267ad974020354bb79ec4f89dbbb42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameObject: {fileID: 1332281995}
 --- !u!1 &1491671998 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2402733918952372375, guid: 928ce18f7e7fe02498bfe628e0eabd01, type: 3}
@@ -2735,7 +2835,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4253f32900bcc4d499d675566142ded0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 772573014}
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -3037,7 +3137,7 @@ MonoBehaviour:
   m_TurnSpeed: 60
   m_InputBinding: 0
   m_Controllers:
-  - {fileID: 1842048658}
+  - {fileID: 803385035}
   m_DeadzoneMin: 0.125
   m_DeadzoneMax: 0.925
 --- !u!114 &1926069584

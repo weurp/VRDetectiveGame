@@ -8,3 +8,4 @@ EditorBuildSettings:
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: becc151b34daad546ae24f28b8d98a8c, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 912fc61352caf964da113ca105685472, type: 2}
+    xr.sdk.mock-hmd.settings: {fileID: 11400000, guid: 1ed12696d3cb72a4a8e55ef1dbe8b67c, type: 2}
